@@ -1,0 +1,23 @@
+{
+  "name": "hackgtfall2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "dependencies": {
+    "aws-sdk": "^2.339.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcabio/HackGTFall2018.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bcabio/HackGTFall2018/issues"
+  },
+  "homepage": "https://github.com/bcabio/HackGTFall2018#readme"
+}
