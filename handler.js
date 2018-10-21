@@ -1,14 +1,14 @@
 'use strict';
 
-/* eslint-disable no-param-reassign */
-
-module.exports.hello = function (context) {
-  context.log(context.authLevel);
-
-  context.res = {
-    // status: 200, /* Defaults to 200 */
-    body: 'Go Serverless v1.x! Your function executed successfully!',
+module.exports.hello = async (event, context) => {
+  return {
+    statusCode: 200,
+    body: JSON.stringify({
+      message: 'Go Serverless v1.0! Your function executed successfully!',
+      input: event,
+    }),
   };
 
-  context.done();
+  // Use this code if you don't use the http event with the LAMBDA-PROXY integration
+  // return { message: 'Go Serverless v1.0! Your function executed successfully!', event };
 };
